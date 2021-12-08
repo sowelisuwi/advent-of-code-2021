@@ -14,4 +14,4 @@ Position2[commands_] := First @ Fold[PositionDelta2, {{0, 0}, 0}, commands]
 
 input = Import[DirectoryName[$InputFileName] <> "input.txt", "Data"]
 
-{Apply[Times, Position1[input]], Apply[Times, Position2[input]]}
+{Times @@ Position1[input], Times @@ Position2[input]}
