@@ -7,5 +7,5 @@ Fuel2[xs_] := Min[Fuel2[xs, Floor], Fuel2[xs, Ceiling]]
 
 input = First[Import[DirectoryName[$InputFileName] <> "input.txt", "CSV"]]
 
-Print[Fuel1[input]] # part 1
-Print[Fuel2[input]] # part 2
+Print[Fuel1[input]] (* part 1 *)
+Print[Fuel2[input]] (* part 2 *)
