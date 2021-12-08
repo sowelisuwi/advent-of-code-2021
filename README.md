@@ -24,6 +24,6 @@ Please note that all of this is very proprietary.
 
 Once you have set it all up and `wolframscript -help` works, you can execute the solutions! For example, to see the answers for day 7, run:
 
-```
+```shell
 $ wolframscript -file day_07/solution.wls
 ```
