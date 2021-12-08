@@ -10,7 +10,7 @@ PositionDelta2[{pos_, aim_}, {"up", n_}] := {pos, aim - n}
 
 Position2[commands_] := First @ Fold[PositionDelta2, {{0, 0}, 0}, commands]
 
-input = Import["input.txt", "Data"]
+input = Import[DirectoryName[$InputFileName] <> "input.txt", "Data"]
 
 Print[Apply[Times, Position1[input]]] # part 1
 Print[Apply[Times, Position2[input]]] # part 2

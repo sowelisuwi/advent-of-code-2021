@@ -22,10 +22,8 @@ Or, you can download a copy for free (limited use):
 
 Please note that all of this is very proprietary.
 
-Once you have set it all up and `wolframscript -help` works, you can execute the solutions! For example, if you are using a POSIX shell, to see the answers for day 7, run:
+Once you have set it all up and `wolframscript -help` works, you can execute the solutions! For example, to see the answers for day 7, run:
 
 ```
-$ pushd day_07
-$ wolframscript -file solution.wls
-$ popd
+$ wolframscript -file day_07/solution.wls
 ```
