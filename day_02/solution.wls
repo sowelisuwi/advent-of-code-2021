@@ -1,4 +1,4 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 
 PositionDelta1[{"forward", n_}] := {n, 0}
 PositionDelta1[{"down", n_}] := {0, n}
@@ -14,5 +14,4 @@ Position2[commands_] := First @ Fold[PositionDelta2, {{0, 0}, 0}, commands]
 
 input = Import[DirectoryName[$InputFileName] <> "input.txt", "Data"]
 
-Print[Apply[Times, Position1[input]]] (* part 1 *)
-Print[Apply[Times, Position2[input]]] (* part 2 *)
+{Apply[Times, Position1[input]], Apply[Times, Position2[input]]}

@@ -1,4 +1,4 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 
 Distances[list_, n_] := Map[Abs[n - #] &, list]
 
@@ -9,5 +9,4 @@ Fuel2[list_] := Min[Fuel2[list, Floor], Fuel2[list, Ceiling]]
 
 input = First[Import[DirectoryName[$InputFileName] <> "input.txt", "CSV"]]
 
-Print[Fuel1[input]] (* part 1 *)
-Print[Fuel2[input]] (* part 2 *)
+{Fuel1[input], Fuel2[input]}

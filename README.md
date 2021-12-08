@@ -25,4 +25,4 @@ Please note that all of this is very proprietary~
 Once you have set it all up and `wolframscript -help` works, you can execute the solutions!
 For example, to see the answers for day 7, run `./day_07/solution.wls`.
 
-The first line is the answer to part 1, and the second line is the answer to part 2.
+The first number in the tuple is the answer to part 1, and the second one is the answer to part 2.
