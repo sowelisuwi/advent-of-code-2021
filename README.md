@@ -18,7 +18,7 @@ You'll need WolframScript. It comes with Mathematica or Wolfram Engine. It's all
 Alternatively, these packages work too (free, limited use):
 
 - [Wolfram Engine for desktop](https://www.wolfram.com/engine/) (Linux x86-64, macOS, Windows)
-- [Mathematica for Raspberry Pi](https://www.wolfram.com/raspberry-pi/)
+- [Mathematica for Raspberry Pi](https://www.wolfram.com/raspberry-pi/) (Linux AArch32)
 
 Please note that all of this is very proprietary~
 
