@@ -1,3 +1,5 @@
+#!/usr/bin/env wolframscript
+
 PositionDelta1[{"forward", n_}] := {n, 0}
 PositionDelta1[{"down", n_}] := {0, n}
 PositionDelta1[{"up", n_}] := {0, -n}

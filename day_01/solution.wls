@@ -1,3 +1,5 @@
+#!/usr/bin/env wolframscript
+
 Increases[list_] := Count[Differences[list], _?Positive]
 
 SlidingWindowSums[list_, n_] := Map[Total, Partition[list, n, 1]]

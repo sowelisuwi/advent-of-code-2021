@@ -1,3 +1,5 @@
+#!/usr/bin/env wolframscript
+
 Distances[list_, n_] := Map[Abs[n - #] &, list]
 
 Fuel1[list_] = Total @ Distances[list, Median[list]]
