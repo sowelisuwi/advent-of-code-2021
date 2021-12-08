@@ -1,9 +1,9 @@
-Distances[xs_, y_] := Map[Abs[y - #] &, xs]
+Distances[list_, n_] := Map[Abs[n - #] &, list]
 
-Fuel1[xs_] = Total @ Distances[xs, Median[xs]]
+Fuel1[list_] = Total @ Distances[list, Median[list]]
 
-Fuel2[xs_, f_] := Total @ PolygonalNumber @ Distances[xs, f @ Mean[xs]]
-Fuel2[xs_] := Min[Fuel2[xs, Floor], Fuel2[xs, Ceiling]]
+Fuel2[list_, f_] := Total @ PolygonalNumber @ Distances[list, f @ Mean[list]]
+Fuel2[list_] := Min[Fuel2[list, Floor], Fuel2[list, Ceiling]]
 
 input = First[Import[DirectoryName[$InputFileName] <> "input.txt", "CSV"]]
 
